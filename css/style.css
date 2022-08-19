@@ -41,6 +41,7 @@ body {
 }
 .swiper-wrapper {
   display: flex;
+  align-content: center;
 }
 .swiper-slide {
   display: flex;
@@ -114,10 +115,15 @@ button {
     height: 116px;
     overflow: hidden;
   }
-  .swiper-wrapper {
+  .swiper-pagination {
     position: absolute;
-    top: -2px;
-    left: 8px;
+    top: 183px;
+    left: 0px;
+  }
+  .swiper-wrapper {
+    /*position: absolute;*/
+    top: 0;
+    left: 12px;
   }
   .swiper-slide {
     max-height: 70px;
@@ -175,11 +181,6 @@ button {
     background-image: url('/1.5/img/sony.svg');
     margin: auto auto auto 14px;
   }
-  .swiper-pagination {
-    position: absolute;
-    top: 180px;
-    left: 0px;
-  }
 }
 @media (min-width: 768px) {
   body {
@@ -193,17 +194,11 @@ button {
   .header p {
     margin: 16px auto 16px 24px;
   }
-  button {
-    display: initial;
-  }
-  .swiper-button-active {
-    overflow: visible;
-    max-width: 750px;
-    height: 350px;
-    margin: 16px auto 0px auto;
-  }
   .swiper-pagination {
     display: none;
+  }
+  button {
+    display: initial;
   }
   .swiper-container {
     max-width: 750px;
@@ -212,7 +207,7 @@ button {
   }
   .swiper-wrapper {
     flex-wrap: wrap;
-    position: absolute;
+    /*position: absolute;*/
     left: 3px;
     top: -4px;
   }
@@ -272,43 +267,53 @@ button {
     background-image: url('/1.5/img/sony.svg');
     margin: auto auto auto 14px;
   }
-  .button-show {
+
+  .button-hide {
     position: relative;
+    height: 25px;
+    width: 88px;
+
+    left: 29px;
+    top: 10px;
+
+    text-align: right;
+  }
+  .button-hide::before {
+    content: url('/1.5/img/icon.svg');
+    display: inline-block;
+    height: 10.292893409729004px;
+    width: 7.41421365737915px;
+    position: relative;
+    top: 12px;
+    left: -10px;
+    transform: rotate(180deg);
+  }
+  .button-show {
+    position: relative; /**/
     height: 24px;
     width: 134px;
 
     left: 29px;
     top: 10px;
-    background-image: url('/1.5/img/icon.svg');
-    background-repeat: no-repeat;
-    background-position: 3px;
+
     text-align: right;
   }
-  /*.button-show .show__img {
-    position: absolute;
-
-    top: 8px;
-    left: -18px;
-  }*/
-  .button-hide {
+  .button-show::before {
+    content: url('/1.5/img/icon.svg');
+    display: inline-block;
+    height: 10.292893409729004px;
+    width: 7.41421365737915px;
     position: relative;
-    height: 24px;
-    width: 88px;
-    left: 29px;
-    top: 188px;
-    margin-left: auto;
-
-    background-image: url('/1.5/img/icon2.svg');
-    background-repeat: no-repeat;
-    background-position: 3px;
-    text-align: right;
+    top: 1px;
+    left: -17px;
+    transform: rotate(0deg);
   }
-  /*.button-hide .hide__img {
-    position: absolute;
-
-    top: 8px;
-    left: -19px;
-  }*/
+  .swiper-button-active {
+    overflow: visible;
+    max-width: 750px;
+    height: 350px;
+    margin: 16px auto 0px auto;
+  }
 }
 @media (min-width: 1120px) {
   body {
@@ -321,22 +326,16 @@ button {
   .header p {
     margin: 16px auto 16px 32px;
   }
-  .swiper-button-active {
-    overflow: visible;
-    max-width: 750px;
-    height: 350px;
-    margin: 16px auto 0px auto;
-  }
   .swiper-container {
     max-width: 1080px;
-    height: 180px;
+    height: 176px;
     margin: 16px auto 0px auto;
   }
   .swiper-wrapper {
     flex-wrap: wrap;
-    position: absolute;
+    /*position: absolute;*/
     left: 0px;
-    top: -4px;
+    top: 40px;
   }
   .swiper-slide {
     max-height: 70px;
@@ -363,41 +362,50 @@ button {
     background-image: url('/1.5/img/apple.svg');
     margin: auto auto auto 18px;
   }
-  .button-show {
+
+  .button-hide {
     position: relative;
+    height: 25px;
+    width: 88px;
+
+    left: 38px;
+    top: 103px;
+
+    text-align: right;
+  }
+  .button-hide::before {
+    content: url('/1.5/img/icon.svg');
+    display: inline-block;
+    height: 10.292893409729004px;
+    width: 7.41421365737915px;
+    position: relative;
+    top: 14px;
+    left: -16px;
+    transform: rotate(180deg);
+  }
+  .swiper-button-active {
+    overflow: visible;
+    max-width: 1077px;
+    height: 197px;
+    margin: 16px auto 0px auto;
+  }
+  .button-show {
+    position: relative; /**/
     height: 24px;
     width: 134px;
 
     left: 36px;
-    top: 12px;
-    background-image: url('/1.5/img/icon.svg');
-    background-repeat: no-repeat;
-    background-position: 3px;
+    top: 15px;
     text-align: right;
   }
-  /*.button-show .show__img {
-    position: absolute;
-
-    top: 8px;
-    left: -18px;
-  }*/
-  .button-hide {
+  .button-show::before {
+    content: url('/1.5/img/icon.svg');
+    display: inline-block;
+    height: 10.292893409729004px;
+    width: 7.41421365737915px;
     position: relative;
-    height: 24px;
-    width: 88px;
-    left: 36px;
-    top: 121px;
-    margin-left: auto;
-
-    background-image: url('/1.5/img/icon2.svg');
-    background-repeat: no-repeat;
-    background-position: 3px;
-    text-align: right;
-  }
-  /*.button-hide .hide__img {
-    position: absolute;
-
-    top: 7px;
+    top: 0;
     left: -16px;
-  }*/
+    transform: rotate(0deg);
+  }
 }
