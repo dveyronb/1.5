@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>CPS</title>
   </head>
   <body>
@@ -17,9 +17,9 @@
     </header>
     <!--Главный контейнер слайдера-->
     <main class="swiper-container brand-slider">
-    <!--Обязательная оболочка-->
-      <nav class="swiper-wrapper">
-    <!--Слайды-->
+      <!--Обязательная оболочка-->
+      <div class="swiper-wrapper">
+        <!--Слайды-->
         <div class="swiper-slide main-slide">
           <div class="logo__lenovo"></div>
           <a href="#"></a>
@@ -74,24 +74,14 @@
           <div class="logo__apple-2"></div>
           <a href="#"></a>
         </div>
-
-      </nav>
+      </div>
       <!--Если нужна пагинация-->
       <div class="swiper-pagination"></div>
     </main>
 
-    <button class="button-show"><!-- -->
-      <!--<img src="img/icon.svg" alt="иконка" class="show__img" />-->
-      Показать все
-    </button>
-    <button class="button-hide">
-      <!--<img src="img/icon2.svg" alt="иконка" class="hide__img" />-->
-      Скрыть
-    </button>
+    <button class="button-show">Показать все</button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/1.5/js/script.js"></script>
   </body>
 </html>
-
-
