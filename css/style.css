@@ -97,6 +97,9 @@ button {
   background-color: rgba(28, 28, 28, 0);
   border: none;
 }
+button:hover {
+  cursor: pointer;
+}
 .button-none {
   display: none;
 }
